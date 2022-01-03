@@ -7,9 +7,10 @@ https://www.typescripttutorial.net
 ## Content
 1. [Step 1 Getting Started](#Step-1-Getting-Started)
 2. [Step 2 Basic Types](#Step-2-Basic-Types)
-3. [TBD](#TBD)
-4. [Eslint for TS](#Eslint-for-TS)
-5. [Contacts](#Contacts)
+3. [Step 3 Control Flow Statements](#Step-3-Control-Flow-Statements)
+4. [TBD](#TBD)
+5. [Eslint for TS](#Eslint-for-TS)
+6. [Contacts](#Contacts)
 
 ---------
 <!-- toc -->
@@ -52,6 +53,26 @@ Learn how to use TS types and return values.
 ```String Literal Types``` – learn how to define a type that accepts only a specified string literal.
 
 ```Type Inference``` – explain where and how TypeScript infers types of variables.Type Annotation – learn how to use type annotation to define the static type for variables, function parameters, and return values.
+
+---------
+<!-- toc -->
+## Step 3 Control Flow Statements
+
+Learn how to control flow statement.
+
+```if…else``` – learn how to execute code based on a condition.
+
+```switch..case``` – show you how to use the switch statement to allow a number of possible execution paths.
+
+```for``` – create a loop that executes a specified number of times.
+
+```while``` – create a pretest loop that executes as long as a condition is true.
+
+```do…while``` – learn how to create a posttest loop that executes until a condition is false.
+
+```break``` – show you how to use the break statement to terminate a loop or a switch.
+
+```continue``` – learn how to skip to the end of a loop and continue the next iteration.
 
 ---------
 <!-- toc -->
