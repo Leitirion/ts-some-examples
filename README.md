@@ -9,7 +9,7 @@ https://www.typescripttutorial.net
 2. [Step 2 Basic Types](#Step-2-Basic-Types)
 3. [Step 3 Control Flow Statements](#Step-3-Control-Flow-Statements)
 4. [Step 4 Functions](#Step-4-Functions)
-5. [TBD](#TBD)
+5. [Step 5 Classes](#Step-5-Classes)
 6. [Eslint for TS](#Eslint-for-TS)
 7. [Contacts](#Contacts)
 
@@ -92,6 +92,24 @@ Learn how to use functions.
 ```Rest Parameters``` – use the rest parameters to handle an infinite number of arguments of a function.
 
 ```Function overloadings``` – learn how to establish between parameter types and results of a function via function overloadings.
+
+---------
+<!-- toc -->
+## Step 5 Classes
+
+```Classes``` – learn how to construct a class in TypeScript.
+
+```Access Modifiers``` – introduce you to private, protected, and public access modifiers.
+
+```The readonly Modifier``` – learn how to use the readonly modifier to make class properties immutable.
+
+```Getters & Setters``` – show you how to use the getters and setters to control the access of the class properties.
+
+```Inheritance``` – learn how to use the inheritance to reuse the functionality of another class.
+
+```Static methods & properties``` – define static methods and variables shared by all instances of a class.
+
+```Abstract Classes``` – explain the abstract classes that define some common behaviors.
 
 ---------
 <!-- toc -->
