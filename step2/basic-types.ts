@@ -143,6 +143,17 @@ if(requests.request2.status===ApprovalStatus.approved){
 //     console.log(messsage);
 // }
 
+//Any
+function add(a: any, b: any) {
+    if (typeof a === 'number' && typeof b === 'number') {
+        return a + b;
+    }
+    if (typeof a === 'string' && typeof b === 'string') {
+        return a.concat(b);
+    }
+    throw new Error('Parameters must be numbers or strings');
+}
+
 //Never
 function fn(a: string | number): boolean {
     if (typeof a === "string") {
@@ -159,3 +170,25 @@ let neverOccur = () => {
 }
 
 //union
+function add2(a: number | string, b: number | string) {
+    if (typeof a === 'number' && typeof b === 'number') {
+        return a + b;
+    }
+    if (typeof a === 'string' && typeof b === 'string') {
+        return a.concat(b);
+    }
+    throw new Error('Parameters must be numbers or strings');
+}
+
+//Alias (creating new type from existing)
+type nameOfBook = string | number
+let name6:nameOfBook=`Jack's Journey`;
+let neme7:nameOfBook=123;
+
+//String Literal Types
+type MouseEvent1 = 'click' | 'dblclick' | 'mouseup' | 'mousedown'
+let mouseEvent:MouseEvent1
+mouseEvent='click';
+console.log(mouseEvent);
+mouseEvent='dblclick';
+console.log(mouseEvent);
