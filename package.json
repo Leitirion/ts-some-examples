@@ -1,6 +1,8 @@
 {
   "scripts": {
-  "lint": "eslint . --ext .ts"
+  "lint": "eslint . --ext .ts",
+    "ts:step2": "ts-node step2/basic-types.ts",
+    "ts:step3": "ts-node step3/control-flow-statements.ts"
 },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.8.1"
