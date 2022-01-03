@@ -199,4 +199,3 @@ let items=[1,2,3,'hi'];
 function increment(counter:number) {
     return counter++;
 }
-
