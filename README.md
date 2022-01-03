@@ -1,4 +1,4 @@
-# TS examples and lessons(https://www.typescripttutorial.net)
+# TS examples and lessons (https://www.typescripttutorial.net)
 ___Or with link below:___
 ```bash
 https://www.typescripttutorial.net
