@@ -1,46 +1,46 @@
-let counter:number;
-counter =1;
-let counter1:number =1;
-let counter2=1;
+let counter: number;
+counter = 1;
+let counter1: number = 1;
+let counter2 = 1;
 
 let name1: string = 'John';
-let name2:string;
-name2 ='John';
-let name5='John';
+let name2: string;
+name2 = 'John';
+let name5 = 'John';
 
-let age:number=18;
-let age2:number;
-age2=18;
-let age5=18;
+let age: number = 18;
+let age2: number;
+age2 = 18;
+let age5 = 18;
 
 //Arrays
-let name3:string[]=['John','Jane','Peter'];
-let name4=['John','Jane','Peter'];
+let name3: string[] = ['John', 'Jane', 'Peter'];
+let name4 = ['John', 'Jane', 'Peter'];
 console.log(name4);
 
-let age3:number[]=[18,19,20];
-let age4=[21.22,23];
-console.log(age3,age4);
+let age3: number[] = [18, 19, 20];
+let age4 = [21.22, 23];
+console.log(age3, age4);
 
-let numbers1=[1,2,3];
-let doubleIt=numbers1.map(e=>e*2);
+let numbers1 = [1, 2, 3];
+let doubleIt = numbers1.map(e => e * 2);
 console.log(doubleIt);
 
 //Objects
-let person:{
-    name:'Jonh',
-    age:18
+let person: {
+    name: 'Jonh',
+    age: 18
 }
-let person1:{
-    name:'Peter',
-    age:19,
-    dogName:'Marti'
+let person1: {
+    name: 'Peter',
+    age: 19,
+    dogName: 'Marti'
 }
 
 //Function arguments & return types
-let greeting:(name:string)=>string;
+let greeting: (name: string) => string;
 
-greeting = function(name:string) {
+greeting = function (name: string) {
     return `Hi ${name}`;
 }
 // let greeting1:(name:string)=>string;
@@ -50,10 +50,10 @@ greeting = function(name:string) {
 // }
 
 //Turple
-let bgColor, headerColor:[number,number,number,number?];
-bgColor=[255,20,0, 0.5];
-headerColor=[255,0,0];
-console.log(`bgColor=`,bgColor,'/',`headerColor=`,headerColor);
+let bgColor, headerColor: [number, number, number, number?];
+bgColor = [255, 20, 0, 0.5];
+headerColor = [255, 0, 0];
+console.log(`bgColor=`, bgColor, '/', `headerColor=`, headerColor);
 
 //enum
 enum Month {
@@ -72,41 +72,44 @@ enum Month {
 };
 console.log(Month);
 
-function isItSummer(month:Month){
-    let isSummer:boolean;
+function isItSummer(month: Month) {
+    let isSummer: boolean;
     switch (month) {
         case Month.Jun:
         case Month.Jul:
         case Month.Aug:
-            isSummer=true;
+            isSummer = true;
             break;
         default:
-            isSummer=false;
+            isSummer = false;
             break;
-    };
+    }
+    ;
     return isSummer;
 };
-console.log(isItSummer(Month.Sep),isItSummer(Month.Jun));
+console.log(isItSummer(Month.Sep), isItSummer(Month.Jun));
 
 enum TimeOfDay {
-    x=3,
+    x = 3,
     y,
     b,
-    z=13
+    z = 13
 };
-function isItNight(time:TimeOfDay){
-    let IsNight:boolean;
-    switch (time){
+
+function isItNight(time: TimeOfDay) {
+    let IsNight: boolean;
+    switch (time) {
         case TimeOfDay.x:
         case TimeOfDay.y:
         case TimeOfDay.b:
-            IsNight =true;
+            IsNight = true;
             break;
         default:
-            IsNight=false;
+            IsNight = false;
             break;
-    };
-return IsNight;
+    }
+    ;
+    return IsNight;
 };
 console.log(isItNight(14));
 console.log(isItNight(TimeOfDay.b));
@@ -116,27 +119,29 @@ enum ApprovalStatus {
     approved
 };
 
-const requests={
-    request1:{
-        id:1,
-        name:'requestName1',
+const requests = {
+    request1: {
+        id: 1,
+        name: 'requestName1',
         status: ApprovalStatus.approved,
         description: 'Please approve this request'
     },
-    request2:{
-        id:2,
-        name:'requestName2',
+    request2: {
+        id: 2,
+        name: 'requestName2',
         status: ApprovalStatus.draft,
         description: 'Please draft this request'
     }
 };
-if(requests.request1.status===ApprovalStatus.approved){
+if (requests.request1.status === ApprovalStatus.approved) {
     console.log('Approved');
-};
-if(requests.request2.status===ApprovalStatus.approved){
+}
+;
+if (requests.request2.status === ApprovalStatus.approved) {
     console.log('Approved');
-};
-    console.log('Draft!');
+}
+;
+console.log('Draft!');
 
 //void
 // function log(message): void {
@@ -182,20 +187,20 @@ function add2(a: number | string, b: number | string) {
 
 //Alias (creating new type from existing)
 type nameOfBook = string | number
-let name6:nameOfBook=`Jack's Journey`;
-let neme7:nameOfBook=123;
+let name6: nameOfBook = `Jack's Journey`;
+let neme7: nameOfBook = 123;
 
 //String Literal Types
 type MouseEvent1 = 'click' | 'dblclick' | 'mouseup' | 'mousedown'
-let mouseEvent:MouseEvent1
-mouseEvent='click';
+let mouseEvent: MouseEvent1
+mouseEvent = 'click';
 console.log(mouseEvent);
-mouseEvent='dblclick';
+mouseEvent = 'dblclick';
 console.log(mouseEvent);
 
 //Type Inference
-let items=[1,2,3,'hi'];
+let items = [1, 2, 3, 'hi'];
 
-function increment(counter:number) {
+function increment(counter: number) {
     return counter++;
 }
