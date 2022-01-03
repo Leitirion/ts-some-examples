@@ -21,7 +21,7 @@ Learn about what typescript is and its advantages over the vanilla JavaScript an
 <!-- toc -->
 ## Step 2 Basic Types
 
-Learn how to use type annotation to define the static type for variables, function parameters, and return values.
+Learn how to use a lot of TS types and return values.
 
 ---------
 <!-- toc -->
