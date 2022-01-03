@@ -89,10 +89,10 @@ function isItSummer(month:Month){
 console.log(isItSummer(Month.Sep),isItSummer(Month.Jun));
 
 enum TimeOfDay {
-    x,
+    x=3,
     y,
     b,
-    z
+    z=13
 }
 function isItNight(time:TimeOfDay){
     let IsNight:boolean;
@@ -108,4 +108,5 @@ function isItNight(time:TimeOfDay){
     }
 return IsNight;
 }
-console.log(isItNight(TimeOfDay.z));
+console.log(isItNight(14));
+console.log(isItNight(TimeOfDay.b));
