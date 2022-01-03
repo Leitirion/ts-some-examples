@@ -133,12 +133,29 @@ const requests={
 if(requests.request1.status===ApprovalStatus.approved){
     console.log('Approved');
 };
-if(requests.request1.status===ApprovalStatus.draft){
-    console.log('Draft!');
-};
 if(requests.request2.status===ApprovalStatus.approved){
     console.log('Approved');
 };
-if(requests.request2.status===ApprovalStatus.draft){
-    console.log('Draft');
-};
+    console.log('Draft!');
+
+//void
+// function log(message): void {
+//     console.log(messsage);
+// }
+
+//Never
+function fn(a: string | number): boolean {
+    if (typeof a === "string") {
+        return true;
+    } else if (typeof a === "number") {
+        return false;
+    }
+    // make the function valid
+    return neverOccur();
+}
+
+let neverOccur = () => {
+    throw new Error('Never!');
+}
+
+//union
