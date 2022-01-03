@@ -175,7 +175,7 @@ while (i5 < 3) {
     if (i5 % 2) {
         continue;
     }
-    console.log('i5=',i5);
+    console.log('i5=', i5);
 }
 
 let i6 = 0;
@@ -185,4 +185,4 @@ do {
         continue;
     }
 } while (i6 < 3)
-console.log('i6=',i6);
+console.log('i6=', i6);
