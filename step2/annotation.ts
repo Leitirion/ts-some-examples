@@ -1,3 +1,7 @@
+import {
+    useLayoutEffect
+} from "../../../Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/213.5744.223/IntelliJ IDEA.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/react";
+
 let counter:number;
 counter =1;
 let counter1:number =1;
@@ -83,9 +87,9 @@ function isItSummer(month:Month){
         default:
             isSummer=false;
             break;
-    }
+    };
     return isSummer;
-}
+};
 console.log(isItSummer(Month.Sep),isItSummer(Month.Jun));
 
 enum TimeOfDay {
@@ -93,7 +97,7 @@ enum TimeOfDay {
     y,
     b,
     z=13
-}
+};
 function isItNight(time:TimeOfDay){
     let IsNight:boolean;
     switch (time){
@@ -105,8 +109,40 @@ function isItNight(time:TimeOfDay){
         default:
             IsNight=false;
             break;
-    }
+    };
 return IsNight;
-}
+};
 console.log(isItNight(14));
 console.log(isItNight(TimeOfDay.b));
+
+enum ApprovalStatus {
+    draft,
+    approved
+};
+
+const requests={
+    request1:{
+        id:1,
+        name:'requestName1',
+        status: ApprovalStatus.approved,
+        description: 'Please approve this request'
+    },
+    request2:{
+        id:2,
+        name:'requestName2',
+        status: ApprovalStatus.draft,
+        description: 'Please draft this request'
+    }
+};
+if(requests.request1.status===ApprovalStatus.approved){
+    console.log('Approved');
+};
+if(requests.request1.status===ApprovalStatus.draft){
+    console.log('Draft!');
+};
+if(requests.request2.status===ApprovalStatus.approved){
+    console.log('Approved');
+};
+if(requests.request2.status===ApprovalStatus.draft){
+    console.log('Draft');
+};
