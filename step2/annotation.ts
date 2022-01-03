@@ -1,7 +1,3 @@
-import {
-    useLayoutEffect
-} from "../../../Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/213.5744.223/IntelliJ IDEA.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/react";
-
 let counter:number;
 counter =1;
 let counter1:number =1;
