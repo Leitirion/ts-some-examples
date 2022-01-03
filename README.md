@@ -8,9 +8,10 @@ https://www.typescripttutorial.net
 1. [Step 1 Getting Started](#Step-1-Getting-Started)
 2. [Step 2 Basic Types](#Step-2-Basic-Types)
 3. [Step 3 Control Flow Statements](#Step-3-Control-Flow-Statements)
-4. [TBD](#TBD)
-5. [Eslint for TS](#Eslint-for-TS)
-6. [Contacts](#Contacts)
+4. [Step 4 Functions](#Step-4-Functions)
+5. [TBD](#TBD)
+6. [Eslint for TS](#Eslint-for-TS)
+7. [Contacts](#Contacts)
 
 ---------
 <!-- toc -->
@@ -73,6 +74,24 @@ Learn how to control flow statement.
 ```break``` – show you how to use the break statement to terminate a loop or a switch.
 
 ```continue``` – learn how to skip to the end of a loop and continue the next iteration.
+
+--------
+<!-- toc -->
+## Step 4 Functions
+
+Learn how to use functions.
+
+```Functions``` – learn how to declare a function that uses type annotation in TypeScript.
+
+```Function types``` – guide you on how to use function types to define types for functions.
+
+```Optional Parameters``` – show you how to define functions with optional parameters.
+
+```Default Parameters``` – introduce you to default parameters.
+
+```Rest Parameters``` – use the rest parameters to handle an infinite number of arguments of a function.
+
+```Function overloadings``` – learn how to establish between parameter types and results of a function via function overloadings.
 
 ---------
 <!-- toc -->
