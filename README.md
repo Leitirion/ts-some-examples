@@ -10,8 +10,9 @@ https://www.typescripttutorial.net
 3. [Step 3 Control Flow Statements](#Step-3-Control-Flow-Statements)
 4. [Step 4 Functions](#Step-4-Functions)
 5. [Step 5 Classes](#Step-5-Classes)
-6. [Eslint for TS](#Eslint-for-TS)
-7. [Contacts](#Contacts)
+6. [Step 6 Interfaces](#Step-6-Interfaces)
+7. [Eslint for TS](#Eslint-for-TS)
+8. [Contacts](#Contacts)
 
 ---------
 <!-- toc -->
@@ -96,6 +97,7 @@ Learn how to use functions.
 ---------
 <!-- toc -->
 ## Step 5 Classes
+learn about TypeScript classes and how to use them.
 
 ```Classes``` – learn how to construct a class in TypeScript.
 
@@ -110,6 +112,15 @@ Learn how to use functions.
 ```Static methods & properties``` – define static methods and variables shared by all instances of a class.
 
 ```Abstract Classes``` – explain the abstract classes that define some common behaviors.
+
+---------
+<!-- toc -->
+## Step 6 Interfaces
+Learn about TypeScript interfaces and how to use them to enforce type checking.
+
+```Interfaces``` – introduce you to interfaces and how to use them for creating contracts within your code.
+
+```Extending Interfaces``` – learn how to extend an interface to create a combination of interfaces.
 
 ---------
 <!-- toc -->

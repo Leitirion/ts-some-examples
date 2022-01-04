@@ -4,7 +4,8 @@
     "ts:step2": "ts-node step2/basic-types.ts",
     "ts:step3": "ts-node step3/control-flow-statements.ts",
     "ts:step4": "ts-node step4/functions.ts",
-    "ts:step5": "ts-node step5/classes.ts"
+    "ts:step5": "ts-node step5/classes.ts",
+    "ts:step6": "ts-node step6/interfaces.ts"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.8.1"
