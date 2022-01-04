@@ -199,7 +199,6 @@ division.division = 12;
 console.log(division.division);
 
 class Person2 {
-    // ... other code
     private firstName: string;
     private lastName: string;
 
