@@ -214,5 +214,6 @@ class C implements B {
         return this.b10(2);
     }
 }
+
 //interface A сам по себе с методом a1, interface B продлевает и делает как-бы единый код с interface A, class C позволяет реализовывать код
 // из interface A и interface B c обоими методами.
