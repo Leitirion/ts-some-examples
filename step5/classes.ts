@@ -61,7 +61,7 @@ console.log('a =', sum.a);
 // protected
 // public
 
-class Multiplication {
+class MultiplicationPrivate {
     private a: number;
     private b: number;
 
@@ -70,27 +70,39 @@ class Multiplication {
         this.b = b;
     }
 
-    getMultiplication() {
+    getMultiplicationPrivate() {
         return this.a * this.b;
     }
 }
 
-let multiplication = new Multiplication(a, b);
-console.log('multiplication-private =', multiplication.getMultiplication()); //a,b are private and u can't access them without class Multiplicatipon
+let multiplicationPrivate = new MultiplicationPrivate(a, b);
+console.log('multiplication-private =', multiplicationPrivate.getMultiplicationPrivate()); //a,b are private and u can't access them without class Multiplicatipon
 
-class Multiplication1 {
-    public a: number; //u don't need to write public
-    public b: number; //u don't need to write public
-
-    constructor(a: number, b: number) {
+class MultiplicationPublic {
+    constructor(public a: number, public b: number) {
         this.a = a;
         this.b = b;
     }
 
-    getMultiplication1() {
+    getMultiplicationPublic() {
         return this.a * this.b;
     }
 }
 
-let multiplication1 = new Multiplication1(a, b);
-console.log('multiplication-public =', multiplication1.a); //a,b are public and u can access them without class Multiplicatipon
+let multiplicationPublic = new MultiplicationPublic(a, b);
+console.log('multiplication-public =', multiplicationPublic.a); //a,b are public and u can access them without class Multiplicatipon
+
+class PersonProtected {
+    constructor(protected ssn: string, private firstName: string, private lastName: string) {
+        this.ssn = ssn;
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
+    getFullName(): string {
+        return `${this.firstName} ${this.lastName}`;
+    }
+}
+
+let personProtected = new PersonProtected('123', 'Iln', 'Gil');
+console.log(personProtected.getFullName());
