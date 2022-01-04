@@ -11,8 +11,9 @@ https://www.typescripttutorial.net
 4. [Step 4 Functions](#Step-4-Functions)
 5. [Step 5 Classes](#Step-5-Classes)
 6. [Step 6 Interfaces](#Step-6-Interfaces)
-7. [Eslint for TS](#Eslint-for-TS)
-8. [Contacts](#Contacts)
+7. [Step 7 Advanced types](#Step-7-Advanced-types)
+8. [Eslint for TS](#Eslint-for-TS)
+9. [Contacts](#Contacts)
 
 ---------
 <!-- toc -->
@@ -121,6 +122,20 @@ Learn about TypeScript interfaces and how to use them to enforce type checking.
 ```Interfaces``` – introduce you to interfaces and how to use them for creating contracts within your code.
 
 ```Extending Interfaces``` – learn how to extend an interface to create a combination of interfaces.
+
+
+---------
+<!-- toc -->
+## Step 7 Advanced types
+Learn about TypeScript advanced types and how to use them.
+
+```Intersection Types``` – show you how to create a new type that has all features of existing types.
+
+```Type Guards``` – learn how to use type guards to narrow the type of a variable within a conditional block.
+
+```Type Casting``` – show you how to use type casting to convert a variable of one type to another.
+
+```Type Assertions``` – guide you on how to use a type assertion to tell the compiler to treat a value as a specified type.
 
 ---------
 <!-- toc -->
