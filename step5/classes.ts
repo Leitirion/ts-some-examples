@@ -267,7 +267,7 @@ let employeeMe = new EmployeeMe('John1', 'Eng1');
 console.log(employeeMe.describe());
 
 //Static Methods and Properties
-class Employee1 {
+class EmployeeStatic {
     private static headcount: number = 0;
 
     constructor(
@@ -275,17 +275,69 @@ class Employee1 {
         private lastName: string,
         private jobTitle: string) {
 
-        Employee1.headcount++;
+        EmployeeStatic.headcount++;
     }
 
     public static getHeadcount() {
-        return Employee1.headcount;
+        return EmployeeStatic.headcount;
     }
 }
-let john = new Employee1('John', 'Doe', 'Front-end Developer');
-let jane = new Employee1('Jane', 'Doe', 'Back-end Developer');
 
-console.log(Employee1.getHeadcount());
+let john = new EmployeeStatic('John', 'Doe', 'Front-end Developer');
+let jane = new EmployeeStatic('Jane', 'Doe', 'Back-end Developer');
+
+console.log('EmployeeStatic head count =', EmployeeStatic.getHeadcount());
 
 //Abstract Classes
+abstract class EmployeeAbstract {
+    constructor(private firstName: string, private lastName: string) {
+    }
 
+    abstract getSalary(): number
+
+    get fullName(): string {
+        return `${this.firstName} ${this.lastName}`;
+    }
+
+    compensationStatement(): string {
+        return `${this.fullName} makes ${this.getSalary()} a month.`;
+    }
+}
+
+class FullTimeEmployee extends EmployeeAbstract {
+    constructor(firstName: string, lastName: string, private salary: number) {
+        super(firstName, lastName);
+    }
+
+    getSalary(): number {
+        return this.salary;
+    }
+}
+
+class Contractor extends EmployeeAbstract {
+    constructor(firstName: string, lastName: string, private rate: number, private hours: number) {
+        super(firstName, lastName);
+    }
+
+    getSalary(): number {
+        return this.rate * this.hours;
+    }
+}
+
+class MyPayment extends EmployeeAbstract {
+    constructor(firstName: string, lastName: string, private rate: number, private days: number) {
+        super(firstName, lastName);
+    }
+
+    getSalary(): number {
+        return this.rate * this.days
+    }
+}
+
+let john1 = new FullTimeEmployee('John', 'Doe', 12000);
+let jane1 = new Contractor('Jane', 'Doe', 100, 160);
+let Me = new MyPayment('Il', 'Gi', 2200, 20);
+
+console.log(john1.compensationStatement());
+console.log(jane1.compensationStatement());
+console.log(Me.compensationStatement());
