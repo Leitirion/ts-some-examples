@@ -12,8 +12,9 @@ https://www.typescripttutorial.net
 5. [Step 5 Classes](#Step-5-Classes)
 6. [Step 6 Interfaces](#Step-6-Interfaces)
 7. [Step 7 Advanced types](#Step-7-Advanced-types)
-8. [Eslint for TS](#Eslint-for-TS)
-9. [Contacts](#Contacts)
+8. [Step 8 Generics](#Step-8-Generics)
+9. [Eslint for TS](#Eslint-for-TS)
+10. [Contacts](#Contacts)
 
 ---------
 <!-- toc -->
@@ -136,6 +137,18 @@ Learn about TypeScript advanced types and how to use them.
 ```Type Casting``` – show you how to use type casting to convert a variable of one type to another.
 
 ```Type Assertions``` – guide you on how to use a type assertion to tell the compiler to treat a value as a specified type.
+
+---------
+<!-- toc -->
+## Step 8 Generics
+
+Learn about TypeScript generics and how to use them.
+
+```Generic constraints``` – show you how to add constraints to the generic types.
+
+```Generic Classes``` – guide you on how to develop generic classes.
+
+```Generic Interfaces``` – walk you through the steps for creating generic interfaces.
 
 ---------
 <!-- toc -->
