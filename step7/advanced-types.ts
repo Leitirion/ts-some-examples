@@ -44,3 +44,39 @@ let employeeNew: EmlpoyeeNew = {
     email: '123123@mail.com',
     phone: 23293874798
 }
+
+//Type Guards
+//typeof
+type alphanumeric = string | number;
+
+function add(a: alphanumeric, b: alphanumeric) {
+    if (typeof a === 'number' && typeof b === 'number') {
+        return a + b;
+    }
+
+    if (typeof a === 'string' && typeof b === 'string') {
+        return a.concat(b);
+    }
+
+    throw new Error('Invalid arguments. Both arguments must be either numbers or strings.');
+}
+
+console.log(add(1, 2));
+console.log('asd', 'bgbg');
+
+type numberAndString = string | number;
+
+function div(a1: numberAndString, b1: numberAndString) {
+    if (typeof a1 === "string" && typeof b1 === "string") {
+        return a1.toUpperCase().concat(b1);
+    }
+    if (typeof a1 === "number" && typeof b1 === "number") {
+        return a1 / b1;
+    }
+    throw new Error('Something wrong!');
+}
+
+console.log(div(2, 3));
+console.log(div('il', 'gi'));
+
+//instanceof
