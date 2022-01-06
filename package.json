@@ -7,7 +7,8 @@
     "ts:step5": "ts-node step5/classes.ts",
     "ts:step6": "ts-node step6/interfaces.ts",
     "ts:step7": "ts-node step7/advanced-types.ts",
-    "ts:step8": "ts-node step8/generics.ts"
+    "ts:step8": "ts-node step8/generics.ts",
+    "ts:step9": "ts-node step9/modules.ts"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.8.1"

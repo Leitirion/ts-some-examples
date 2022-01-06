@@ -13,8 +13,9 @@ https://www.typescripttutorial.net
 6. [Step 6 Interfaces](#Step-6-Interfaces)
 7. [Step 7 Advanced types](#Step-7-Advanced-types)
 8. [Step 8 Generics](#Step-8-Generics)
-9. [Eslint for TS](#Eslint-for-TS)
-10. [Contacts](#Contacts)
+9. [Step 9 Modules](#Step-9-Modules)
+10. [Eslint for TS](#Eslint-for-TS)
+11. [Contacts](#Contacts)
 
 ---------
 <!-- toc -->
@@ -149,6 +150,14 @@ Learn about TypeScript generics and how to use them.
 ```Generic Classes``` – guide you on how to develop generic classes.
 
 ```Generic Interfaces``` – walk you through the steps for creating generic interfaces.
+
+---------
+<!-- toc -->
+## Step 9 Modules
+
+Learn about TypeScript modules and how to use them.
+
+```TypeScript Modules``` – introduce you to modules in TypeScript and how to use them in other modules.
 
 ---------
 <!-- toc -->
