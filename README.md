@@ -1,4 +1,4 @@
-# TS examples and lessons (https://www.typescripttutorial.net)
+# [TS examples and lessons](https://www.typescripttutorial.net)
 ___Or with link below:___
 ```bash
 https://www.typescripttutorial.net
@@ -15,7 +15,8 @@ https://www.typescripttutorial.net
 8. [Step 8 Generics](#Step-8-Generics)
 9. [Step 9 Modules](#Step-9-Modules)
 10. [Eslint for TS](#Eslint-for-TS)
-11. [Contacts](#Contacts)
+11. [Help for cases](#Help-for-cases)
+12. [Contacts](#Contacts)
 
 ---------
 <!-- toc -->
@@ -158,6 +159,13 @@ Learn about TypeScript generics and how to use them.
 Learn about TypeScript modules and how to use them.
 
 ```TypeScript Modules``` – introduce you to modules in TypeScript and how to use them in other modules.
+
+---------
+<!-- toc -->
+## Help for cases
+Help for case: ```camelCase, kebab-case, PascalCase, snake_case``` and etc
+
+### [help-for-case-types.md](https://github.com/Leitirion/ts-some-examples/blob/master/help-for-case-types.md)
 
 ---------
 <!-- toc -->
