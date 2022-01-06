@@ -14,7 +14,7 @@ https://www.typescripttutorial.net
 7. [Step 7 Advanced types](#Step-7-Advanced-types)
 8. [Step 8 Generics](#Step-8-Generics)
 9. [Step 9 Modules](#Step-9-Modules)
-10. [Step 10 node.js TS](#Step-10-(node.js)-TS)
+10. [Step 10 node.js TS](#Step-10-node-js-TS)
 11. [Eslint for TS](#Eslint-for-TS)
 12. [Help for cases](#Help-for-cases)
 13. [Contacts](#Contacts)
@@ -164,7 +164,7 @@ Learn about TypeScript modules and how to use them.
 
 ---------
 <!-- toc -->
-## Step 10 (node.js) TS
+## Step 10 node js TS
 
 Learn how to automate the development workflow for using TypeScript in a Node.js project.
 
